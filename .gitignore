@@ -1,0 +1,27 @@
+
+# Maven
+target/
+*.log
+
+# H2: base de datos local
+datos/
+*.mv.db
+*.trace.db
+*.lock.db
+
+# Credenciales y configuraciones privadas
+.env
+.env.*
+!.env.example
+secrets/
+*.key
+*.pem
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

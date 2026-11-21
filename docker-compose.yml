@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: homemaster
+      MYSQL_USER: homemaster
+      MYSQL_PASSWORD: homemaster_dev
+      MYSQL_ROOT_PASSWORD: root_dev_change_me
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+volumes:
+  mysql_data:
